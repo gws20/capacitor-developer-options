@@ -32,4 +32,17 @@ public class DeveloperOptionsPlugin extends Plugin {
             call.reject("Error checking Developer Options", e);
         }
     }
+
+    @PluginMethod
+    public void openDeveloperOptions(PluginCall call) {
+        try {
+            Context context = getContext();
+            Intent intent = new Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+            call.resolve();
+        } catch (Exception e) {
+            call.reject("Failed to open Developer Options", e);
+        }
+    }
 }
