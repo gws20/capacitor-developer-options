@@ -1,6 +1,6 @@
 {
   "name": "@gws20/capacitor-developer-options",
-  "version": "0.0.1",
+  "version": "6.0.3",
   "description": "A Capacitor plugin to check if Developer Options are enabled on Android devices.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -9,17 +9,13 @@
   "files": [
     "android/src/main/",
     "android/build.gradle",
-    "dist/",
-    "ios/Sources",
-    "ios/Tests",
-    "Package.swift",
-    "Gws20CapacitorDeveloperOptions.podspec"
+    "dist/"
   ],
   "author": "GWS20",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gws20/capacitor-developer-options.git.git"
+    "url": "https://github.com/gws20/capacitor-developer-options.git"
   },
   "bugs": {
     "url": "https://github.com/gws20/capacitor-developer-options.git/issues"
